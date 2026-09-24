@@ -141,21 +141,42 @@
     </table>
 
     <h2>Forms in HTML</h2>
-    <p><b>Action attribute: </b>It is used to define what action needs to be performed when a form is submitted </p>
+    <p><b>Action attribute: </b>It is used to define what action needs to be performed when a form is submitted 
+        <br><b>Placeholder attribute: </b>text that appear b4 typing anything in text box 
+        <br><b>Label: </b>Label elements represents a caption for an item in a user interface</p>
     
-    <form action="/paris.jpg">
-        Username
-        <input type="text"> <br>
-        Password
-        <input type="password"> <br>
-        No.
-        <input type="number"> <br>
-        Time
-        <input type="time"> <br>
-        Color
-        <input type="color">
+    <form action="/action">
 
+        <label for="username">Username: </label>
+        <input type="text" placeholder="Enter your Username" id="username"> <br>
+       
+
+        <label for="password"> Password: </label>
+        <input type="password" placeholder="Enter your password" id="password"> <br>
+            
+        <label>
+            Time
+            <input type="time"> 
+        </label> <br>
+
+        <label>
+            Color
+            <input type="color"> 
+        </label>
+
+        <p><b>The three types of button:</b></p>
+
+        <button type="submit">submit</button> this performs the submit action <br>
+        <button type="button">Click here!</button> this acts as a simple button <br>
+        <button type="reset">reset</button> this resets the whole form <br>
+
+        <p><b>Button using input: </b>(generally not used)</p>
+        <input type="submit">
+         
 
     </form>
+
+
+
 </body>
 </html>
