@@ -145,9 +145,11 @@
     <h2>Forms in HTML</h2>
     <p><b>Action attribute: </b>It is used to define what action needs to be performed when a form is submitted 
         <br><b>Placeholder attribute: </b>text that appear b4 typing anything in text box 
-        <br><b>Label: </b>Label elements represents a caption for an item in a user interface</p>
+        <br><b>Label: </b>Label elements represents a caption for an item in a user interface
+        <br><b>Name attribute: it is submitted with the form as part of a name = value pair</b> 
+        <br>for ex.: if you want to redirect to yt then go on yt first, search anything there, you will see an url above, copy paste it only till the slash(/), and notice what is written next, if it is written search_query=apple (let's say u searched for apple), then write name="search_query"</p>
     
-    <form action="/action">
+        <form action="/action">
 
         <label for="username">Username: </label>
         <input type="text" placeholder="Enter your Username" id="username"> <br>
@@ -175,17 +177,28 @@
         <p><b>Button using input: </b>(generally not used)</p>
         <input type="submit">
 
+        </form>
+
         <hr>
 
-        <form action="https://www.youtube.com/results">
-            <label for="yt">YOUTUBE</label> <br>
+         <!-- to search anything here, make sure you comment out the above form and then run on live server, otherwise it will show error as two forms cannot run simultaneously...
+         -->
+
+        <form action="https://www.youtube.com/results" method="GET">
+            <label>YOUTUBE</label> <br>
             <input type="text" placeholder="search on youtube" name="search_query">
             <button>search</button>
+        </form> 
 
+        <form action="https://www.google.com/search">
+            <label>GOOGLE</label> <br>
+            <input type="text" placeholder="search on google" name="q">
+            <button>search</button>
         </form>
-         
+     
 
-    </form>
+
+     
 
 
 
