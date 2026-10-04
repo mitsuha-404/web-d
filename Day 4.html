@@ -146,7 +146,7 @@
     <p><b>Action attribute: </b>It is used to define what action needs to be performed when a form is submitted 
         <br><b>Placeholder attribute: </b>text that appear b4 typing anything in text box 
         <br><b>Label: </b>Label elements represents a caption for an item in a user interface
-        <br><b>Name attribute: it is submitted with the form as part of a name = value pair</b> 
+        <br><b>Name attribute: </b>it is submitted with the form as part of a name = value pair 
         <br>for ex.: if you want to redirect to yt then go on yt first, search anything there, you will see an url above, copy paste it only till the slash(/), and notice what is written next, if it is written search_query=apple (let's say u searched for apple), then write name="search_query"</p>
     
         <form action="/action">
@@ -195,12 +195,48 @@
             <input type="text" placeholder="search on google" name="q">
             <button>search</button>
         </form>
-     
 
+        <h3>Checkbox:</h3>
 
-     
+        <form action="/server">
+            <input type="checkbox" name="age" id="age" checked>
+            <label for="age">I am 18+</label>
+            <button>submit</button>
+        </form>
 
+        <h3>Radio button:</h3> <p>if we give same name, it groups together</p>
 
+        <form action="/server">
+
+          <div> 
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" id="trans" value="trans">
+            <label for="trans">Trans</label>
+            <br>
+            <button>Submit</button>
+          </div>
+
+          <div>
+            Choose your subjects:
+            <input type="checkbox" name="sub" id="sub1" value="maths">
+            <label for="sub1">Maths</label>
+
+            <input type="checkbox" name="sub" id="sub2" value="phy">
+            <label for="sub2">Physics</label>
+
+            <input type="checkbox" name="sub" id="sub3" value="chem">
+            <label for="sub3">Chemistry</label>
+
+            <button>submit</button>
+
+          </div>
+
+        </form>
 
 </body>
 </html>
